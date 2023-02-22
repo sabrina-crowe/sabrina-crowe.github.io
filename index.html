@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sabrina Crowe - QF Student</title>
+    <header id="top">
+        <div class="rectangle" id="about"><span>about</span></div>
+        <div class="rectangle" id="education"><span>education</span></div>
+        <div class="rectangle" id="projects"><span>projects</span></div>
+        <div class="rectangle" id="resume"><span>resume</span></div>
+        <div class="rectangle" id="contact"><span>contact</span></div>
+      </header>
+      
+      <style>
+        body {
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            background-image: url('image.webp');
+            background-size: cover;
+            background-size: 100%;
+            background-repeat: no-repeat;
+           
+        }
+         
+        .parallax1 {
+            background-image: url("stevens.jpg");
+            height: 100%;
+            width: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+        .parallax2 {
+            background-image: url("bryant.jpeg");
+            height: 100%;
+            width: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+        header {
+            top: 0px;
+            width: 100%;
+            position:fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            background-color: #fff;
+            color: #333;
+            font-family: 'Courier New', monospace;
+            font-size: 25px;
+            text-align: center;
+            z-index: 9999;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .rectangle {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .rectangle:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        #intro {
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 100px;
+            margin-top: 200px;
+            margin-left: 100px;
+            position: relative;
+            z-index: 2;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        #info1 {
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 40px;
+            margin-top: 100px;
+            margin-left: 150px;
+            margin-bottom:380px;
+            position: relative;
+            z-index: 2;
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+            animation-delay: 1s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        #educationHeading {
+            color: black;
+            font-family: Georgia, serif;
+            font-size: 50px;
+            margin-left: 100px
+            
+            }
+        #aboutMe{
+            color: black;
+            font-family: Georgia, serif;
+            font-size: 50px;
+            margin-right: 500px;
+            text-align: right;
+        }
+        #hobbies {
+            width:100%;
+            overflow:hidden;
+            animation: slide-left 3s;
+            margin-left: 30px;
+            font-family: Georgia, serif;
+            }
+
+        @keyframes slide-left {
+        from {
+            margin-left: 100%;
+            width: 300%; 
+        }
+
+        to {
+            margin-left: 30px;
+            width: 100%;
+        }
+        }
+        @keyframes slide-right {
+        from {
+            margin-right: 100%;
+            width: 100%; 
+        }
+
+        to {
+            margin-left: 50px;
+            width: 100%;
+        }
+    }
+        div.gallery {
+            margin: 5px;
+            margin-left:100px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 250px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+        }
+        #aboutText{
+            font-family: Georgia, serif;
+            margin-right: 200px;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        #eduText{
+            font-family: Georgia, serif;
+            font-size: 20px;
+            line-height: 1.5;
+            margin-left:125px;
+            margin-right:175px;
+        }
+        h2 {
+            color: black;
+            font-family: Georgia, serif;
+            font-size: 50px;
+            margin-left: 100px
+            
+            }
+      </style>
+      
+    <body>
+        <div class="background"></div>
+        <h1 id="intro">Hi, I'm Sabrina Crowe</h1>
+        <p id="info1">I'm a first year Quantitative Finance major at Stevens Institute of Technology</p>
+        <img id = "portrait" src="me1.jpeg" img style="float: left; margin: 0px 175px 30px 100px;" width="350">
+        <h2 id="aboutMe">About Me</h2>
+        <p id = "aboutText">I'm a resident of Morris Plains, New Jersey - better know by its next-door neighbor, Morristown.
+            I absolutely love the New Jersey / NYC Metro area and couldn't imagine living anywhere else.<br><br>
+            Outside of school I love swimming, reading (my most recent favorite is a play called <i>A Lion in Winter</i>), art, and fashion.
+            I also enjoy refining my coding skills, hence this website! It's been four years since I last used HTML and it's been fun derusting those skills.
+            <br><br>
+            When I'm in the city you'll find me checking out book stores, thrift stores, the multitude of parks, and museums. 
+        </p>
+          
+          <div style="width:200px; height: 250px;"></div>
+          <div class="parallax1"><div style="width:200px; height: 400px;"></div></div>
+          <div style="height: 15px" id = "filler"></div>
+        <h2 id="educationHeading">Education</h2>
+        <p id = "eduText">I'm a freshman at Stevens Institute of Technology. I chose Stevens because of its unique
+            Undergraduate Quantitative Finance Program; I initially applied to schools planning on double majoring in Applied Mathematics
+            and Finance, but I then discovered QF included both subjects as well as a vital Computer Science & Data Science component. The program,
+            alongside the location and scholarships, made Stevens a no-brainer.<br><br>
+            In high school I graduated top 5 in the class through our school's STEM Academy; I followed the mathematics track and had the privilege of
+            taking Linear Algebra as a senior, my favorite math subject. I was involved with the high school's varsity Womens swim team, 
+            the Kiwanis Key Club, and the Math Team. I also tutored my peers through the Math Honor Society and National Honor Society.<br><br>
+            At Stevens, I'm a part of the Pinnacle Scholars program, the Web Chair of the Python for Business Club, and a member of Stevens Women in Business 
+            and Computer Science. I'm excited to discover other ways I can become involved in the Stevens community.<br><br>
+            Completed Courses: <b>QF 101</b> Intro to Quantitative Finance I, <b>QF 104</b> Data Management in R,
+            <b>QF 106</b> Fundamentals of Probability for Finance, <b>MIS 110</b> Creative Problem Solving in Computing, 
+            <b>MA 125</b> Vectors and Matrices, <b>MA 126</b> Multivariable Calculus I<br><br>
+            In Progress Courses: <b>QF 102</b> Intro to Quantitative Finance II, <b>QF 103</b> Intro to Financial Tools & Tech,
+            <b>QF 112</b> Statistics for Quantitative Finance, <b>CS 115</b> Introduction to Computer Science, <b>MA 221</b> Differential Equations
+        </p>
+        <div style="height: 15px" id = "filler2"></div>
+        <h2 id="projHeading">Projects</h2>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+        <h4>Last Trading Day Price Downloader</h4>
+      <img src="gui.jpg" alt="gui" style="width:100%; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2)">
+      
+      <p style="font-family:Georgia, 'Times New Roman', Times, serif; margin-left:10px; margin-right:10px; line-height:1.2">I created a program which downloads the prices of desired stocks for the last trading day of each given year.
+        It outputs the data as a .csv file. This program's intended use is for calculating CAGR in Excel. Tools include:
+        <li>Python (Pandas & yfinance)</li>
+        <li>Tkinter (GUI Package)</li>
+        <li>cx_Freeze (.exe compiler)</li>
+        <br>
+        <br>
+        <p style="font-family:Georgia, 'Times New Roman', Times, serif; margin-left:10px;">Check it out <a href="https://github.com/sabrina-crowe/Price-Downloader-Last-Trading-Day" target="_blank">here</a></p>
+      </p>
+    </div>      
+  </div>
+  
+  <div class="column nature">
+    <div class="content">
+    <h4>Data Analysis: Type II Diabetes in Women</h4>
+      <img src="confusion.png" alt="confusion matrix" style="width:100%; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2)">
+      <p style="font-family:Georgia, 'Times New Roman', Times, serif; margin-left:10px; margin-right:10px; line-height:1.2">This was my first project involving data analysis.
+    I used data from Kaggle that recorded the potential risk factors for Type II Diabetes in women. I then used the data
+    to train a logistic regression model to predict whether a woman would be diagnosed with Diabetes. 
+    I had to clean the data, as some of it was invalid or implausible. Tools include:
+    <li>Python (Pandas)</li>
+    <li>Data Visualization (Matplotlib, Seaborn)</li>
+    <li>Logistic Regression (sklearn)</li></p>
+    <p style="font-family:Georgia, 'Times New Roman', Times, serif; margin-left:10px;">Check it out <a href="https://github.com/sabrina-crowe/Type-II-Diabetes-in-Women" target="_blank">here</a></p>
+      </div>
+  </div>
+</div>
+</div>
+
+<h3>Some skills that I'm <span style = "font-family: 'Courier New', Courier, monospace">developing</span>...</h3><br>
+<img id = "portrait" src="skills.png" width="1000" class = "center" style="box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2)">
+<div style="height: 15px" id = "filler3"></div>
+<h2 id="resHeading">Resume</h2>
+<div style="display:flex; align-items:center; margin-left:200px; margin-top:40px">
+    <iframe src="resume.pdf#toolbar=0" width="40%" height="400px" style="margin-right:20px;"></iframe>
+    <p style="font-size:25px; flex: 1; font-family:Georgia, 'Times New Roman', Times, serif; margin-left:20px;">You can download it <a href="resume.pdf" target="_blank">here</a>.</p>
+  </div>
+
+
+<div style="width:200px; height: 100px;"></div>
+<div class="parallax2"><div style="width:200px; height: 400px;"></div></div>
+<div style="height: 15px" id = "filler4"></div>
+<h2 id="conHeading">Contact Me</h2>
+<p style="font-size:20px; margin-left:150px; font-family:Georgia, 'Times New Roman', Times, serif;">Email: <a href = "mailto: scrowe1@stevens.edu">scrowe1@stevens.edu</a>
+<br>Phone: 973-615-6956</p>
+<br>
+<!-- icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a href="https://www.linkedin.com/in/sabrina-e-crowe/" class="fa fa-linkedin" target="_blank"></a>
+<a href="https://github.com/sabrina-crowe" class="fa fa-github" target="_blank"></a>
+
+<br><br><br>
+<footer>
+    <p style="margin-right:50px; font-family:'Courier New', Courier, monospace">Last Updated 2/22/23<br>
+  </footer>
+
+
+<style>* {
+    box-sizing: border-box;
+  }
+  h3{
+    color: black;
+            font-family: Georgia, serif;
+            font-size: 40px;
+            margin-left: 100px;
+  }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 70px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 20%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+        margin-left:175px;
+        margin-right:50px;
+        }
+
+    .fa-github {
+        background: #333;
+        color: white;
+    }
+    footer {
+        text-align: right;
+        padding: 3px;
+        background-color: #333;
+        color: white;
+    }
+  body {
+    background-color: #f1f1f1;
+  }
+  li {
+    font-family: Georgia, serif;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin-left:80px;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    float: left;
+    width: 40%;
+    align-self: center;
+    margin-left: 100px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+ </style>
+ </body>
+
+      <script>
+        const aboutButton = document.getElementById('about');
+        const aboutHeading = document.getElementById('top');
+        const eduButton = document.getElementById('education');
+        const eduHeading = document.getElementById('filler');
+        const projButton = document.getElementById('projects');
+        const projHeading = document.getElementById('filler2');
+        const resButton = document.getElementById('resume');
+        const resHeading = document.getElementById('filler3');
+        const conButton = document.getElementById('contact');
+        const conHeading = document.getElementById('filler4');
+        aboutButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+        });
+        eduButton.addEventListener('click', () => {
+        eduHeading.scrollIntoView({
+            behavior: 'smooth'
+            });
+        });
+        projButton.addEventListener('click', () => {
+        projHeading.scrollIntoView({
+            behavior: 'smooth'
+            });
+        });
+        resButton.addEventListener('click', () => {
+        resHeading.scrollIntoView({
+            behavior: 'smooth'
+            });
+        });
+        conButton.addEventListener('click', () => {
+        conHeading.scrollIntoView({
+            behavior: 'smooth'
+            });
+        });
+      </script>
+      
+   
+      
+</html>
