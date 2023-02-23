@@ -21,7 +21,10 @@
             background-repeat: no-repeat;
            
         }
-         
+        .container2 {
+            position: relative; 
+            z-index: 1; 
+      }
         .parallax1 {
             background-image: url("website/stevens.jpg");
             height: 100%;
@@ -190,19 +193,21 @@
       </style>
       
     <body>
-        <div class="background"></div>
-        <h1 id="intro">Hi, I'm Sabrina Crowe</h1>
-        <p id="info1">I'm a first year Quantitative Finance major at Stevens Institute of Technology</p>
-        <div style="height: 15px" id = "f"></div>
-        <img id = "portrait" src="website/me1.jpeg" img style="float: left; margin: 0px 175px 30px 100px;" width="350">
-        <h2 id="aboutMe">About Me</h2>
-        <p id = "aboutText">I'm a resident of Morris Plains, New Jersey - better know by its next-door neighbor, Morristown.
-            I absolutely love the New Jersey / NYC Metro area and couldn't imagine living anywhere else.<br><br>
-            Outside of school I love swimming, reading (my most recent favorite is a play called <i>A Lion in Winter</i>), art, and fashion.
-            I also enjoy refining my coding skills, hence this website! It's been four years since I last used HTML and it's been fun derusting those skills.
-            <br><br>
-            When I'm in the city you'll find me checking out book stores, thrift stores, the multitude of parks, and museums. 
-        </p>
+       <div class="background"></div>
+        <div class="container2">
+            <h1 id="intro">Hi, I'm Sabrina Crowe</h1>
+            <p id="info1">I'm a first year Quantitative Finance major at Stevens Institute of Technology</p>
+            <img id = "portrait" src="website/me1.jpeg" img style="float: left; margin: 0px 175px 30px 100px;" width="350">
+            <h2 id="aboutMe">About Me</h2>
+            <p id = "aboutText">I'm a resident of Morris Plains, New Jersey - better know by its next-door neighbor, Morristown.
+                I absolutely love the New Jersey / NYC Metro area and couldn't imagine living anywhere else.<br><br>
+                Outside of school I love swimming, reading (my most recent favorite is a play called <i>A Lion in Winter</i>), art, and fashion.
+                I also enjoy refining my coding skills, hence this website! It's been four years since I last used HTML and it's been fun derusting those skills.
+                <br><br>
+                When I'm in the city you'll find me checking out book stores, thrift stores, the multitude of parks, and museums. 
+            </p>
+        </div>
+
           
           <div style="width:200px; height: 250px;"></div>
           <div class="parallax1"><div style="width:200px; height: 400px;"></div></div>
