@@ -218,18 +218,25 @@
   /**
    * Skills animation
    */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
+  // Select the skills content element using standard DOM selection
+  const skillsContent = document.querySelector('.skills-content');
+  
+  // Check if the skillsContent element exists
+  if (skillsContent) {
     new Waypoint({
-      element: skilsContent,
+      element: skillsContent,
       offset: '80%',
       handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
+        // Select all progress bars within the skillsContent element
+        const progressBars = skillsContent.querySelectorAll('.progress .progress-bar');
+        
+        // Loop through each progress bar and update its width based on 'aria-valuenow'
+        progressBars.forEach((progressBar) => {
+          const width = progressBar.getAttribute('aria-valuenow') + '%';
+          progressBar.style.width = width;
         });
       }
-    })
+    });
   }
 
   /**
